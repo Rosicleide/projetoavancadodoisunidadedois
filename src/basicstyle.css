@@ -78,6 +78,8 @@ aside {
 	border-style: dashed;
 	border-color: #2d5613;
 	border-radius: 15px;
+	font-family: Garamond;
+	color: #24440f;
 }
 
 footer{
@@ -126,6 +128,16 @@ caption{
 	color: gray;
 }
 
+video{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+aside p{
+	margin: 10px 0px 10px 30px;
+	color: #24440f;
+	font-family: Garamond;
+}
 
 
 
