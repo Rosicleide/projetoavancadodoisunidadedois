@@ -5,6 +5,8 @@
 	<title> Bolão Bola Grande </title>
 	<link rel="stylesheet" type="text/css" href="basicstyle.css"> 
 	
+	<script type="text/javascript" src="validarDados.js"></script>
+	
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
 </head>
@@ -29,11 +31,11 @@
 			<a href="jogo.html">jogo</a> &gt; <em>apostador</em>
 		</div>
 
-		<form>
+		<form name="formulario" method="post" action="#" onSubmit="return validarDadosform(this);">
 			<br>Cadastro de Apostadores:<br>
-			<input type="text" name="nome" placeholder="Nome" ><br>
-			<input type="email" name="email" placeholder="e-mail"><br>
-			<input type="password" name="senha" placeholder="Senha">
+			<input type="text" name="nome" id="nome" placeholder="Nome" ><br>
+			<input type="email" name="email" id="email" placeholder="e-mail"><br>
+			<input type="password" name="senha" id="senha" placeholder="Senha">
 			<input type="submit">
 		</form>
  		 
