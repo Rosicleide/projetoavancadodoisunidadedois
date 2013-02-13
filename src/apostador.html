@@ -3,32 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<title> Bolão Bola Grande </title>
-	
+	<link rel="stylesheet" type="text/css" href="basicstyle.css"> 
 	
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
 </head>
 
-<body>
-	<h2>Bolão Bola Grande - Apostador</h2>
+<body background="img/bolas.jpeg">
 
-	<header>
-		<p>Banner e o Login/Cadastro</p>
+	<header back>
+		<p>Bolão Bola Grande - Cadastro de Apostador</p>
 	</header>
 
 	<nav>
 		<a href="resultados.html">resultados</a>
 		<a href="jogo.html">jogo</a>
 		<a href="admin.html">administrador</a>
+		<div id="busca"><input type="search" results="5" nome="key" placeholder="Buscar"></div>
 	</nav>
-	
-	<br>Busca: <input type="search" nome="key"> <button id="busca">Go!</button><br>
 
-	<br> ------------------------------------------ <br>
-	<a href="index.html">home</a> &gt; <a href="jogo.html">jogo</a> &gt; <em>apostador</em>
-	<br> ------------------------------------------ <br>
 
-	<section>
+	<section id="main">
+		<div id="mapa">
+			<a href="index.html">home</a> &gt; 
+			<a href="jogo.html">jogo</a> &gt; <em>apostador</em>
+		</div>
+		
 		<form>
 			<br>Cadastro de Apostadores:<br>
 			Nome: <input type="text" name="nome"><br>
@@ -37,7 +37,7 @@
 			<input type="submit">
 		</form>
  		 
- 		<br><br>
+
 		<table>
  			<caption>Modelo de tabela de Resultado</caption>
 				<tr><th>Nome</th> <th>E-mail</th> <th>Editar</th> <th>Deletar</th></tr>
@@ -46,7 +46,7 @@
 				<tr><td>Luiz</td> <td>pessoa@lol.com</td> <td><button id="edit">Editar</button></td> <td><button id="delete">Delete</button></td></tr>
 				<tr><td>Carla</td> <td>pessoa@lol.com</td> <td><button id="edit">Editar</button></td> <td><button id="delete">Delete</button></td></tr>
 		</table>
-		<br><br>
+
 
 	</section>
 
