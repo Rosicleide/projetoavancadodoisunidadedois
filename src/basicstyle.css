@@ -68,6 +68,7 @@ aside {
 	border-style: dashed;
 	border-color: #2d5613;
 	border-radius: 15px;
+	box-shadow: 5px 5px 40px black;
 }
 
 #main{
@@ -80,6 +81,7 @@ aside {
 	border-radius: 15px;
 	font-family: Garamond;
 	color: #24440f;
+	box-shadow: 5px 5px 40px black;
 }
 
 footer{
