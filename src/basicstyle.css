@@ -7,6 +7,7 @@ header{
 
 body{
 	margin: 0;
+
 }
 
 header p{
@@ -97,6 +98,11 @@ footer{
 	font-size: 16px;
 	color: #24440f;
 	background-color: #d6eac9;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 80px;
+	width: 100%;
 }
 
 footer a{
@@ -146,6 +152,7 @@ aside p{
 	color: #24440f;
 	font-family: Garamond;
 }
+
 
 
 
