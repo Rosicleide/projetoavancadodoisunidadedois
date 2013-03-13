@@ -24,5 +24,4 @@ return false;
 
  
 return true;
-}
- 
+};

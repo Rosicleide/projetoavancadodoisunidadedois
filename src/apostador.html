@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="basicstyle.css"> 
 	
 	<script type="text/javascript" src="validarDados.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.mim.js"></script>
 	
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
@@ -18,8 +19,14 @@
 	</header>
 
 	<nav>
-		<a href="resultados.html">resultados</a>
-		<a href="jogo.html">jogo</a>
+		<a href="index.html">Home</a>
+		<a href="jogo.html">Jogos</a>
+		<a href="resultados.html">Resultados</a>
+		<a href="campeonatos.html">Campeonatos</a>
+		<a href="clube.html">Clubes</a>
+		<a href="apostas.html">Apostas</a>
+		<a href="apostador.html">Apostador</a>
+		<a href="ranking.html">Ranking</a>
 		<a href="admin.html">administrador</a>
 		<div id="busca"><input type="search" results="5" nome="key" placeholder="Buscar"></div>
 	</nav>
@@ -35,8 +42,9 @@
 			<br>Cadastro de Apostadores:<br>
 			<input type="text" name="nome" id="nome" placeholder="Nome" ><br>
 			<input type="email" name="email" id="email" placeholder="e-mail"><br>
+			<input type="text" name="login" id="login" placeholder="Login" ><br>
 			<input type="password" name="senha" id="senha" placeholder="Senha">
-			<input type="submit">
+			<input type="submit" name="btEnviar" id="btEnviar">
 		</form>
  		 
 

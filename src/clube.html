@@ -4,6 +4,23 @@
 	<meta charset="utf-8">
 	<title> Bolão Bola Grande </title>
 	<link rel="stylesheet" type="text/css" href="basicstyle.css">
+
+	<script type="text/javascript" src="validarDados.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+	$("#vai").click(function(){
+		$.get("http://bolao-server.no-ip.org:8080/bolaoShow/service/clubes/1", function(data, status){
+			$("#clubes").append(data.nome);
+		});
+	});
+	});
+
+
+	</script>
 	
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
@@ -16,8 +33,14 @@
 	</header>
 
 	<nav>
-		<a href="resultados.html">resultados</a>
-		<a href="jogo.html">jogo</a>
+		<a href="index.html">Home</a>
+		<a href="jogo.html">Jogos</a>
+		<a href="resultados.html">Resultados</a>
+		<a href="campeonatos.html">Campeonatos</a>
+		<a href="clube.html">Clubes</a>
+		<a href="apostas.html">Apostas</a>
+		<a href="apostador.html">Apostador</a>
+		<a href="ranking.html">Ranking</a>
 		<a href="admin.html">administrador</a>
 	</nav>
 
@@ -26,7 +49,13 @@
 			<a href="index.html">home</a> &gt; 
 			<a href="jogo.html">jogo</a> &gt; <em>clube</em>
 		</div>
-		<p> nome </p>
+
+		<input type="submit" id="vai" value="xuxa" ></input>
+
+		<div class="clubes" id="clubes">
+			
+		</div>
+		
 		<article>
 			<p> news 1 </p>
 		</article>
