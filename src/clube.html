@@ -13,9 +13,14 @@
 
 	$(document).ready(function(){
 	$("#vai").click(function(){
-		$.get("http://bolao-server.no-ip.org:8080/bolaoShow/service/clubes/1", function(data, status){
-			$("#clubes").append(data.nome);
-		});
+		$.getJSON("http://bolao-server.no-ip.org:8080/bolaoShow/service/clubes/", function(data, status){
+			var i = 0;
+			$.each(data.resul , function(i,result){
+				$("#clubes").append(result.nome);
+			});
+			
+		}, 
+		"json");
 	});
 	});
 
