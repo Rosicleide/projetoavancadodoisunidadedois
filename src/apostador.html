@@ -5,8 +5,9 @@
 	<title> Bolão Bola Grande </title>
 	<link rel="stylesheet" type="text/css" href="basicstyle.css"> 
 	
-	<script type="text/javascript" src="validarDados.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript" src="scriptUsuario.js"></script>
 	
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
@@ -38,24 +39,30 @@
 			<a href="jogo.html">jogo</a> &gt; <em>apostador</em>
 		</div>
 
-		<form name="formulario" method="post" action="#" onSubmit="return validarDadosform(this);">
+		<form name="formulario">
 			<br>Cadastro de Apostadores:<br>
-			<input type="text" name="nome" id="nome" placeholder="Nome" ><br>
-			<input type="email" name="email" id="email" placeholder="e-mail"><br>
-			<input type="text" name="login" id="login" placeholder="Login" ><br>
-			<input type="password" name="senha" id="senha" placeholder="Senha">
-			<input type="submit" name="btEnviar" id="btEnviar">
+			<input type="text" id="nome" placeholder="Nome" ><br>
+			<input type="email"id="email" placeholder="e-mail"><br>
+			<input type="text" id="login" placeholder="Login" ><br>
+			<input type="password" id="senha" placeholder="Senha">
 		</form>
  		 
+ 		 <button id="butpost">Post</button>
+		<button id="butget">Get</button>
 
 		<table id="table">
- 			<caption>Modelo de tabela de Resultado</caption>
-				<tr><th>Nome</th> <th>E-mail</th> <th>Editar</th> <th>Deletar</th></tr>
-				<tr><td>João</td> <td>pessoa@lol.com</td> <td><button id="edit">Editar</button></td> <td><button id="delete">Delete</button></td></tr>
-				<tr><td>Joana</td> <td>pessoa@lol.com</td>  <td><button id="edit">Editar</button></td> <td><button id="delete">Delete</button></td></tr>
-				<tr><td>Luiz</td> <td>pessoa@lol.com</td> <td><button id="edit">Editar</button></td> <td><button id="delete">Delete</button></td></tr>
-				<tr><td>Carla</td> <td>pessoa@lol.com</td> <td><button id="edit">Editar</button></td> <td><button id="delete">Delete</button></td></tr>
-		</table>
+        	<thead>
+				<tr>
+	        		<th>Nome</th>
+	        		<th>e-mail</th>
+	        		<th>login</th>
+	        	</tr>
+        	</thead>
+        	
+        	<tbody>
+        	</tbody>
+
+       	</table>
 
 
 	</section>

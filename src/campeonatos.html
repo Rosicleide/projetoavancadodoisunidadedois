@@ -5,6 +5,10 @@
 	<title> Bolão Bola Grande - Campeonatos </title>
 	<link rel="stylesheet" type="text/css" href="basicstyle.css">
 	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript" src="scriptCampeonato.js"></script>
+
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
 </head>
@@ -33,13 +37,29 @@
 			<a href="jogo.html">jogo</a> &gt; <em>campeonatos</em>
 		</div>
 
-		<article>
-			<p> Campeonato Brasileiro </p>
-		</article>
+		<form>
+			<br>Cadastro de Campeonato:<br>
+			<input type="text" id="nome" placeholder="Nome">
+			<input type="text" id="ano" placeholder="ano">
+			<input type="text" id="descricao" placeholder="Descricao">
+		</form>
 
- 		<article>
-			<p> Campeonato Paraibano </p>
-		</article>
+		<button id="butpost">Post</button>
+		<button id="butget">Get</button>
+
+		<table id="table">
+        	<thead>
+				<tr>
+	        		<th>Nome</th>
+	        		<th>Ano</th>
+	        		<th>Descricao</th>
+	        	</tr>
+        	</thead>
+        	
+        	<tbody>
+        	</tbody>
+
+       	</table>
 	</section>
 
 	<aside>
