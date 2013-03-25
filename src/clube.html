@@ -8,24 +8,8 @@
 	<script type="text/javascript" src="validarDados.js"></script>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	
-	<script type="text/javascript">
 
-	$(document).ready(function(){
-	$("#vai").click(function(){
-		$.getJSON("http://bolao-server.no-ip.org:8080/bolaoShow/service/clubes/", function(data, status){
-			var i = 0;
-			$.each(data.resul , function(i,result){
-				$("#clubes").append(result.nome);
-			});
-			
-		}, 
-		"json");
-	});
-	});
-
-
-	</script>
+	<script type="text/javascript" src="scriptClube.js"></script>
 	
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
@@ -55,23 +39,28 @@
 			<a href="jogo.html">jogo</a> &gt; <em>clube</em>
 		</div>
 
-		<input type="submit" id="vai" value="xuxa" ></input>
+		<form>
+			<br>Cadastro de Clubes:<br>
+			<input type="text" id="nomeClube" placeholder="Nome">
+		</form>
 
-		<div class="clubes" id="clubes">
-			
-		</div>
+		<button id="butpost">Post</button>
+		<button id="butget">Get</button>
+
+		<table id="table">
+        	<thead>
+				<tr>
+	        		<th>Nome</th>
+	        		<th>Url do escudo</th>
+	        		<th>Id</th>
+	        	</tr>
+        	</thead>
+        	
+        	<tbody>
+        	</tbody>
+
+       	</table>
 		
-		<article>
-			<p> news 1 </p>
-		</article>
-
-		<article>
-			<p> Jogadores </p>
-		</article>
-
-		<article>
-			<p> Jogos </p>
-		</article>
  		
 	</section>
 
