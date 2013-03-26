@@ -5,6 +5,18 @@
 	<title> Bolão Bola Grande - Home </title>
 	<link rel="stylesheet" type="text/css" href="basicstyle.css">
 	
+	<script type="text/javascript" src="validarDados.js"></script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript" src="scriptBolao.js"></script>
+
+	<style type="text/css">
+		#formulario{
+			font-size: 16px;
+		}
+	</style>
+
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
 </head>
@@ -28,12 +40,32 @@
 	</nav>
 
 	<section id="main">
-		<article>
-			<p> conteudo 1</p>
-		</article>
-		<article>
-			<p> conteudo 2</p>
-		</article>
+		<br>Cadastro de Boloes<br>
+		<form id='formulario' >
+			Nome do bolao: <input type="text" id="nomeBolao" placeholder="Nome"> <br>
+			Descrição do bolao: <input type="text" id="descricaoBolao" placeholder="Descricao"> <br>
+			Apostadores: <input type="text" id="ApostadoresBolao" placeholder="Apostadores"> <br>
+			Campeonato: <input type="text" id="campeonatoBolao" placeholder="Campeonato"> <br>
+		</form>
+
+		<button id="butpost">Post</button>
+		<button id="butget">Get</button>
+
+		<table id="table">
+        	<thead>
+				<tr>
+	        		<th>Nome</th>
+	        		<th>descrição</th>
+	        		<th>Apostadores</th>
+	        		<th>Data Criação</th>
+	        		<th>Campeonato</th>
+	        	</tr>
+        	</thead>
+        	
+        	<tbody>
+        	</tbody>
+
+       	</table>
 	</section>
 
 	<aside>

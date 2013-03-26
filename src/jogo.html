@@ -5,6 +5,11 @@
 	<title> Bolão Bola Grande </title>
 	<link rel="stylesheet" type="text/css" href="basicstyle.css"> 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript" src="validarDados.js"></script>
+
+	<script type="text/javascript" src="scriptJogo.js"></script>
+
 	<meta name="description" content="Site de um bolão eletronico referente à Atividade da disciplina de Projeto Avancado de Software II desenvolvido por Filipe Guimarães e Rennan Barbosa">
 	<meta name="keywords" content="Bolao, eletronico, futebol, jogo">
 </head>
@@ -33,14 +38,31 @@
 			<em>jogo</em>
 		</div>
 
-		<p> Jogo </p>
-		<article>
-			<p> news 1 </p>
-		</article>
+		<br>Cadastro de Jogos<br>
+		<form id='formulario' >
+			Clube da casa: <input type="text" id="clubeCasa" placeholder="Clube da Casa"> <br>
+			Clube Visitante: <input type="text" id="clubeVisitante" placeholder="Clube Visitante"> <br>
+			Numero da Rodada: <input type="text" id="numeroRodada" placeholder="Numero da Rodada"> <br>
+			Campeonato: <input type="text" id="campeonato" placeholder="Campeonato"> <br>
+		</form>
 
-		<article>
-			<p> Jogadores </p>
-		</article>
+		<button id="butpost">Post</button>
+		<button id="butget">Get</button>
+
+		<table id="table">
+        	<thead>
+				<tr>
+	        		<th>Clube Casa</th>
+	        		<th>Clube Visitante</th>
+	        		<th>Numero da Rodada</th>
+	        		<th>Campeonato</th>
+	        	</tr>
+        	</thead>
+        	
+        	<tbody>
+        	</tbody>
+
+       	</table>
  		
 	</section>
 
